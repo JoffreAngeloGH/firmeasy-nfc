@@ -1,0 +1,34 @@
+{
+"navd": {
+    "menu": [
+      { "name": "Inicio", "link": "/#inicio" },
+      { "name": "Nosotros", "link": "#nosotrosD" },
+      { "name": "Características", "link": "#caracteristicasD" },
+      { "name": "Froma de trabajo", "link": "#trabajoD" },
+      { "name": "Usuarios", "link": "#usuariosD" }
+    ],
+    "button1": {
+      "text": "Asesorate ahora",
+      "link": "https://wa.me/51988918174?text=Hola%2C%20vengo%20de%20FirmEasy%20Desktop%20%28versi%C3%B3n%20escritorio%29.%20Busco%20una%20asesor%C3%ADa%20personalizada%20para%20resolver%20unas%20dudas"
+    }
+  },
+  "heronfc": {
+    "badge": "Certificado por RENIEC y SUNAT",
+    "title": "Autenticación por NFC:",
+    "highlight": "Máxima Seguridad",
+    "titleAfter": "para Firmas Críticas",
+    "subtitle": "Revoluciona la firma digital en Perú con tecnología NFC certificada. Compatible con DNI electrónico peruano y estándares internacionales.",
+    "primaryCta": { "label": "Solicitar Demo", "href": "/demo" },
+    "secondaryCta": { "label": "Ver Certificaciones", "href": "/certificaciones" },
+    "stats": [
+      { "value": "99.9%", "label": "Precisión" },
+      { "value": "<2s",  "label": "Autenticación" },
+      { "value": "256-bit", "label": "Encriptación" }
+    ],
+    "image": {
+      "src": "../../images/hero-nfc.jpg",
+      "alt": "Aplicación móvil de autenticación NFC para firmas críticas"
+    }
+    }
+  
+}

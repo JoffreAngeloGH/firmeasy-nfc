@@ -1,0 +1,104 @@
+---
+import * as siteData from "../../site.json";
+---
+
+<section class="relative overflow-hidden">
+  <div class="mx-auto max-w-7xl px-6 py-16 sm:py-6">
+    <div
+      class="rounded-[28px] bg-gradient-to-br from-[#F0F7FF] via-[#F7FBFF] to-[#FFF8F3] p-6 sm:p-10"
+    >
+      <div class="grid items-center gap-10 lg:grid-cols-2">
+        <!-- Columna izquierda -->
+        <div>
+          <!-- Badge -->
+          <div
+            class="mb-5 text-white inline-flex items-center gap-2 rounded-full border border-sky-200/70 bg-gradient-to-r from-[#00a280] via-[#01a182] to-[#4646a7] px-3 py-1 text-xs font-medium shadow-sm"
+          >
+            <span class="inline-block h-1.5 w-1.5 rounded-full bg-amber-400"
+            ></span>
+            {siteData.heronfc.badge}
+          </div>
+
+          <!-- Título -->
+          <h1
+            class="max-w-xl text-4xl font-extrabold tracking-tight text-[#0f172a] sm:text-5xl"
+          >
+            {siteData.heronfc.title}
+            <span class="text-transparent bg-clip-text features-title"
+              >{siteData.heronfc.highlight}</span
+            ><br />
+            {siteData.heronfc.titleAfter}
+          </h1>
+
+          <!-- Subtítulo -->
+          <p class="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-600">
+            {siteData.heronfc.subtitle}
+          </p>
+
+          <!-- CTAs -->
+          <div class="mt-7 flex flex-wrap items-center gap-3">
+            <a
+              href={siteData.heronfc.primaryCta.href}
+              class="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#00a280] via-[#01a182] to-[#4646a7] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#00a280]/30 hover:from-[#007a6b] hover:via-[#016f72] hover:to-[#3a3d8f] hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#00a280]/40 transition-all duration-200"
+            >
+              {siteData.heronfc.primaryCta.label}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                ><path
+                  d="M13.172 12 8.222 7.05l1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                ></path></svg
+              >
+            </a>
+
+            <a
+              href={siteData.heronfc.secondaryCta.href}
+              class="inline-flex items-center justify-center rounded-xl border border-[#4646a7] bg-white px-6 py-3 text-sm font-semibold text-[#4646a7] hover:bg-sky-50"
+            >
+              {siteData.heronfc.secondaryCta.label}
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="mt-8 grid max-w-lg grid-cols-3 gap-4 text-left">
+            {
+              siteData.heronfc.stats.map((stat) => (
+                <div class="rounded-2xl bg-white/70 p-4 text-slate-700 shadow-sm ring-1 ring-slate-200">
+                  <div class="text-lg font-bold text-[#4646a7]">
+                    {stat.value}
+                  </div>
+                  <div class="text-xs text-slate-500">{stat.label}</div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="flex justify-center lg:justify-end">
+          <div
+            class="w-full max-w-xl rounded-3xl p-2 shadow-2xl ring-1 ring-black/5"
+          >
+            <img
+              src={siteData.heronfc.image.src}
+              alt={siteData.heronfc.image.alt}
+              class="h-auto w-full rounded-2xl object-cover"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .features-title {
+    background: linear-gradient(90deg, #00a280 0%, #01a182 30%, #4646a7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+</style>
