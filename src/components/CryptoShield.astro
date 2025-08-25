@@ -1,0 +1,106 @@
+---
+/**
+ * Banda azul con título, subtítulo y 3 pilares.
+ * Sin React: render estático y liviano.
+ * Lee contenido desde site.json (import * as siteData).
+ */
+import * as siteData from "../../site.json";
+const data = siteData.cryptoShield;
+---
+
+<section id={data.id} class="relative overflow-hidden">
+  <!-- Fondo degradado + patrón suave -->
+  <div
+    class="absolute inset-0 -z-10 bg-gradient-to-br from-[#059275] via-[#01a182] to-[#4646a7]"
+  >
+  </div>
+  {
+    data.bgImage && (
+      <img
+        src={data.bgImage}
+        alt=""
+        aria-hidden="true"
+        class="pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover opacity-15"
+      />
+    )
+  }
+
+  <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24">
+    <!-- Encabezado -->
+    <div class="text-center text-white">
+      <div
+        class="mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-white/15 ring-1 ring-white/25"
+      >
+        <!-- icono escudo -->
+        <svg
+          class="h-6 w-6"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+        >
+          <path d="M12 3l7 3v6c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V6l7-3z"></path>
+          <path d="M9 12l2 2 4-4"></path>
+        </svg>
+      </div>
+
+      <h2 class="text-3xl sm:text-5xl font-extrabold leading-tight">
+        {data.title}
+      </h2>
+      <p class="mt-4 text-base sm:text-lg/7 max-w-3xl mx-auto opacity-95">
+        {data.subtitle}
+      </p>
+    </div>
+
+    <!-- 3 pilares -->
+    <div class="mt-12 grid grid-cols-1 gap-8 text-white sm:grid-cols-3">
+      {
+        data.items.map((it) => (
+          <div class="text-center">
+            <div class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-white/15 ring-1 ring-white/25">
+              {it.icon === "check" && (
+                <svg
+                  class="h-7 w-7"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+              )}
+              {it.icon === "finger" && (
+                <svg
+                  class="h-7 w-7"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M12 11a4 4 0 0 1 4 4c0 2.5-1 5-2 6" />
+                  <path d="M12 7a8 8 0 0 1 8 8c0 3-1 6-3 8" />
+                  <path d="M12 7a8 8 0 0 0-8 8c0 3 1 6 3 8" />
+                  <path d="M12 11a4 4 0 0 0-4 4c0 2.5 1 5 2 6" />
+                </svg>
+              )}
+              {it.icon === "building" && (
+                <svg
+                  class="h-7 w-7"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6" />
+                </svg>
+              )}
+            </div>
+
+            <h3 class="text-lg font-extrabold">{it.title}</h3>
+            <p class="mt-2 text-sm text-sky-50/90">{it.desc}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

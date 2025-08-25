@@ -2,6 +2,17 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import Navbar from "../components/Navbar.astro";
+import SolutionsSlider from "../components/SolutionsSlider";
+import Auth from "../components/Auth.astro";
+import Flow from "../components/Flow.astro";
+import Devices from "../components/Devices.astro";
+import SecurityLevel from "../components/SecurityLevel.astro";
+import CryptoShield from "../components/CryptoShield.astro";
+import Industries from "../components/Industries.astro";
+import Faq from "../components/Faq.astro";
+import WhyUs from "../components/WhyUs.astro";
+import FinalCta from "../components/FinalCta.astro";
+import Footer from "../components/Footer.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -10,4 +21,15 @@ import Navbar from "../components/Navbar.astro";
 <Layout>
   <Navbar />
   <Hero />
+  <SolutionsSlider client:load />
+  <Auth />
+  <Flow />
+  <Devices />
+  <SecurityLevel />
+  <CryptoShield />
+  <Industries />
+  <Faq />
+  <WhyUs />
+  <FinalCta />
+  <Footer />
 </Layout>

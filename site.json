@@ -29,6 +29,349 @@
       "src": "../../images/hero-nfc.jpg",
       "alt": "Aplicación móvil de autenticación NFC para firmas críticas"
     }
+    },
+  "solutionsSlider": {
+    "id": "soluciones",
+    "title": "Soluciones Empresariales de Firma Digital",
+    "subtitle": "Transforme sus procesos documentales con nuestra plataforma de firma digital certificada. Diseñada para profesionales, empresas e instituciones que requieren máxima seguridad jurídica y eficiencia operacional.",
+    "items": [
+      {
+        "id": 1,
+        "title": "Firma Remota Certificada",
+        "desc": "Ejecución de documentos oficiales desde cualquier ubicación con validez legal completa, respaldada por certificación RENIEC.",
+        "image": "../../images/hero-nfc.jpg",
+        "icon": "/assets/icons/globe.svg",
+        "link": "/soluciones/firma-remota"
+      },
+      {
+        "id": 2,
+        "title": "Gestión Corporativa de Firmas",
+        "desc": "Coordine procesos de firma masivos con trazabilidad completa y control administrativo centralizado.",
+        "image": "../../images/hero-nfc.jpg",
+        "icon": "/assets/icons/users.svg",
+        "link": "/soluciones/gestion-corporativa"
+      },
+      {
+        "id": 3,
+        "title": "Infraestructura Sin Hardware",
+        "desc": "Elimine la dependencia de tokens físicos mediante nuestra tecnología de autenticación digital avanzada.",
+        "image": "../../images/hero-nfc.jpg",
+        "icon": "/assets/icons/mobile.svg",
+        "link": "/soluciones/infraestructura"
+      },
+      {
+        "id": 4,
+        "title": "Infraestructura Sin Hardware",
+        "desc": "Elimine la dependencia de tokens físicos mediante nuestra tecnología de autenticación digital avanzada.",
+        "image": "../../images/hero-nfc.jpg",
+        "icon": "/assets/icons/mobile.svg",
+        "link": "/soluciones/infraestructura"
+      },
+      {
+        "id": 5,
+        "title": "Infraestructura Sin Hardware",
+        "desc": "Elimine la dependencia de tokens físicos mediante nuestra tecnología de autenticación digital avanzada.",
+        "image": "../../images/hero-nfc.jpg",
+        "icon": "/assets/icons/mobile.svg",
+        "link": "/soluciones/infraestructura"
+      },
+      {
+        "id": 6,
+        "title": "Infraestructura Sin Hardware",
+        "desc": "Elimine la dependencia de tokens físicos mediante nuestra tecnología de autenticación digital avanzada.",
+        "image": "../../images/hero-nfc.jpg",
+        "icon": "/assets/icons/mobile.svg",
+        "link": "/soluciones/infraestructura"
+      }
+    ]
+  },
+"authSection": {
+    "id": "autenticacion",
+    "title": "Autenticación de documentos digitales",
+    "subtitle": "Automatiza la firma y verificación de documentos de identidad con tecnología NFC especializada para el mercado peruano, con validez legal completa.",
+    "cta": { "label": "Ver demostración", "href": "/demo" },
+    "features": [
+      {
+        "num": "1",
+        "title": "Sube tu documento",
+        "desc": "Carga documentos oficiales en PDF. Plataforma cifrada con máxima seguridad."
+      },
+      {
+        "num": "2",
+        "title": "Define los firmantes",
+        "desc": "Establece orden de firmas, permisos y notificaciones automáticas."
+      },
+      {
+        "num": "3",
+        "title": "Autenticación NFC",
+        "desc": "Verificación instantánea con DNIe y tecnología NFC de alta confianza."
+      },
+      {
+        "icon": "check",
+        "title": "Documento certificado",
+        "desc": "Validez legal completa respaldada por RENIEC e IOFE."
+      }
+    ],
+    "image": {
+      "src": "/assets/img/auth/mockup-nfc.jpg",
+      "alt": "Mockup autenticación NFC en smartphone"
+    },
+    "stats": [
+      { "value": "99.9%", "label": "Precisión" },
+      { "value": "<2s", "label": "Velocidad" },
+      { "value": "120+", "label": "Países" }
+    ]
+  },
+  "flow": {
+    "id": "flujo",
+    "title": "Flujo de Uso Simplificado",
+    "subtitle": "Proceso intuitivo en 3 pasos para máxima eficiencia",
+    "steps": [
+      {
+        "num": "1",
+        "title": "Acerca tu Dispositivo",
+        "desc": "Coloca tu DNI electrónico, tarjeta inteligente o smartphone cerca del lector NFC.",
+        "icon": "device"
+      },
+      {
+        "num": "2",
+        "title": "Autenticación Instantánea",
+        "desc": "El sistema verifica automáticamente tu identidad digital y certificados.",
+        "icon": "bolt"
+      },
+      {
+        "num": "3",
+        "title": "Firma Digital Válida",
+        "desc": "Confirma la operación con tu certificado digital válido ante la ley peruana.",
+        "icon": "fingerprint"
+      }
+    ]
+  },
+  "devices": {
+    "id": "dispositivos",
+    "title": "Dispositivos Compatibles",
+    "subtitle": "Funciona con los dispositivos más utilizados en el ecosistema digital peruano",
+    "items": [
+      {
+        "icon": "dni",
+        "title": "DNI Electrónico Peruano",
+        "desc": "Certificado digital integrado emitido por RENIEC con chip NFC",
+        "bullets": [
+          "Chip NFC integrado",
+          "Certificado PKI",
+          "Válido legalmente"
+        ]
+      },
+      {
+        "icon": "phone",
+        "title": "Smartphones con NFC",
+        "desc": "Dispositivos móviles certificados con tecnología NFC habilitada",
+        "bullets": [
+          "Android",
+          "Biometría integrada",
+          "Portabilidad total"
+        ]
+      }
+    ]
+  },
+  "securityLevels": {
+    "id": "niveles",
+    "title": "Niveles de Seguridad Certificados",
+    "subtitle": "Tres niveles de autenticación adaptados a diferentes necesidades de seguridad",
+    "levels": [
+      {
+        "name": "Nivel 1: Básico",
+        "tagline": "Para transacciones de bajo riesgo",
+        "badge": "SMS/Email",
+        "color": "amber",
+        "features": ["Código SMS", "Verificación por email", "Implementación rápida"],
+        "ideal": "Formularios, registros, confirmaciones simples"
+      },
+      {
+        "name": "Nivel 2: Certificado",
+        "tagline": "Certificado digital con tecnología NFC",
+        "badge": "Recomendado",
+        "color": "blue",
+        "recommended": true,
+        "features": ["Autenticación NFC", "Certificado PKI", "Validez legal completa"],
+        "ideal": "Contratos, documentos legales, transacciones bancarias"
+      },
+      {
+        "name": "Nivel 3: Máximo",
+        "tagline": "Autenticación multifactor biométrica",
+        "badge": "Biometría",
+        "color": "fuchsia",
+        "features": ["Huella dactilar", "Reconocimiento facial", "NFC + Biometría"],
+        "ideal": "Operaciones críticas, datos sensibles, alta seguridad"
+      }
+    ]
+  },
+   "cryptoShield": {
+    "id": "respaldos",
+    "title": "Evita fraudes con respaldo oficial y seguridad criptográfica",
+    "subtitle": "Máxima seguridad avalada por RENIEC y la Infraestructura Oficial de Firma Electrónica",
+    "items": [
+      {
+        "icon": "check",
+        "title": "Certificación RENIEC",
+        "desc": "Validación oficial del Estado Peruano"
+      },
+      {
+        "icon": "finger",
+        "title": "Criptografía Avanzada",
+        "desc": "Algoritmos de última generación"
+      },
+      {
+        "icon": "building",
+        "title": "Infraestructura IOFE",
+        "desc": "Respaldo institucional completo"
+      }
+    ],
+    "bgImage": "/assets/img/patterns/security-bg.svg" 
+  },
+   "industries": {
+    "id": "industrias",
+    "title": "Industrias que Confían en Nosotros",
+    "subtitle": "Soluciones especializadas para los sectores más exigentes del Perú",
+    "items": [
+      {
+        "icon": "bank",
+        "title": "Sector Bancario",
+        "desc": "Cumple con regulaciones de la SBS y estándares internacionales PCI-DSS",
+        "bullets": [
+          "Transferencias seguras",
+          "Apertura de cuentas",
+          "Créditos digitales"
+        ]
+      },
+      {
+        "icon": "health",
+        "title": "Sector Salud",
+        "desc": "Protege datos sensibles bajo normativas MINSA y estándares HIPAA",
+        "bullets": [
+          "Historia clínica digital",
+          "Recetas electrónicas",
+          "Consentimientos informados"
+        ]
+      },
+      {
+        "icon": "gov",
+        "title": "Sector Gobierno",
+        "desc": "Interoperabilidad con PIDE y cumplimiento de normativas gubernamentales",
+        "bullets": [
+          "Trámites digitales",
+          "Licitaciones públicas",
+          "Documentos oficiales"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq",
+    "title": "Preguntas Frecuentes",
+    "items": [
+      {
+        "q": "¿Firmeasy certifica identidad?",
+        "a": "Sí. Somos Entidad certificadora y Entidad Registro y software de firma acreditado, cuyo certificado digital es emitido y validado exclusivamente por RENIEC.<br><br>Firmeasy es parte de Girasol.pe que emite certificados y valida su autenticidad mediante la Infraestructura Oficial de Firma Electrónica (IOFE) del Estado Peruano.",
+        "linkText": "sí.",
+        "linkHref": "/certificaciones"
+      },
+      {
+        "q": "¿Funciona con DNI electrónico peruano (DNIe)?",
+        "a": "Sí, nuestra autenticación NFC es compatible con DNIe emitido por RENIEC y con estándares internacionales."
+      },
+      {
+        "q": "¿Qué tan rápido es el proceso de autenticación?",
+        "a": "El proceso tarda menos de 2 segundos en condiciones normales."
+      }
+    ]
+  },
+   "whyUs": {
+    "id": "por-que-elegirnos",
+    "title": "Por qué elegirnos",
+    "subtitle": "La confianza de miles de usuarios y empresas nos respalda",
+    "image": {
+      "src": "/assets/img/whyus/lock-hero.jpg",
+      "alt": "Seguridad y cifrado para firmas digitales"
+    },
+    "items": [
+      {
+        "icon": "shield",
+        "title": "Certificación Oficial RENIEC",
+        "desc": "Respaldados por la máxima autoridad en identificación del Perú y la Infraestructura Oficial de Firma Electrónica (IOFE) del Estado Peruano."
+      },
+      {
+        "icon": "finger",
+        "title": "Criptografía de Nivel Bancario",
+        "desc": "Algoritmos de encriptación AES-256 y certificados PKI que garantizan la máxima seguridad en cada transacción digital."
+      },
+      {
+        "icon": "bolt",
+        "title": "Simplicidad sin Compromiso",
+        "desc": "Proceso intuitivo de 4 pasos que cualquiera puede usar, sin sacrificar la seguridad ni la validez legal."
+      },
+      {
+        "icon": "building",
+        "title": "Escalabilidad Empresarial",
+        "desc": "Desde una firma personal hasta miles de documentos corporativos, nuestra infraestructura se adapta a tu crecimiento."
+      },
+      {
+        "icon": "check",
+        "title": "Validez Legal Garantizada",
+        "desc": "Cada firma digital tiene el mismo valor legal que una firma manuscrita, respaldada por la legislación peruana vigente."
+      }
+    ]
+  },
+   "finalCta": {
+    "id": "cta-final",
+    "title": "¿Listo para Revolucionar tu Proceso de Firma Digital?",
+    "subtitle": "Únete a las empresas líderes en Perú que ya confían en nuestra tecnología NFC certificada",
+    "primary": { "label": "Solicitar Demostración", "href": "/demo" },
+    "secondary": { "label": "Descargar Brochure", "href": "/brochure.pdf" },
+    "gradient": {
+      "from": "#00a280",
+      "via": "#01a182",
+      "to": "#4646a7"
     }
-  
+  },
+    "footer": {
+    "id": "footer",
+    "brand": {
+      "logo": "/assets/logo/firmeasy-light.svg",
+      "alt": "FirmEasy",
+      "description": "Tecnología de autenticación NFC certificada para el mercado peruano."
+    },
+    "columns": [
+      {
+        "title": "Productos",
+        "links": [
+          { "label": "Autenticación NFC", "href": "/autenticacion-nfc" },
+          { "label": "Firma Digital", "href": "/firma-digital" },
+          { "label": "Certificados PKI", "href": "/certificados" },
+          { "label": "API de Integración", "href": "/api" }
+        ]
+      },
+      {
+        "title": "Soporte",
+        "links": [
+          { "label": "Documentación", "href": "/docs" },
+          { "label": "Centro de Ayuda", "href": "/ayuda" },
+          { "label": "Contacto técnico", "href": "/contacto" },
+          { "label": "Estado del servicio", "href": "/status", "external": true }
+        ]
+      },
+      {
+        "title": "Certificaciones",
+        "links": [
+          { "label": "RENIEC - DNI Electrónico", "href": "https://www.reniec.gob.pe", "external": true },
+          { "label": "SUNAT - Facturación", "href": "https://www.sunat.gob.pe", "external": true },
+          { "label": "Common Criteria", "href": "https://www.commoncriteriaportal.org", "external": true }
+        ]
+      }
+    ],
+    "bottom": {
+      "madeIn": "Hecho en Perú",
+      "countryCode": "PE"
+    }
+  }
 }

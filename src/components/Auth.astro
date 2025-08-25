@@ -1,0 +1,95 @@
+---
+/**
+ * Sección: Autenticación de documentos digitales
+ * - Sin React (no hay estado/efectos).
+ * - Lee textos desde site.json con tu patrón import * as siteData.
+ */
+import * as siteData from "../../site.json";
+const data = siteData.authSection;
+---
+
+<section id={data.id} class="relative overflow-hidden">
+  <!-- Fondo degradado azul -->
+  <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-[#059275] via-[#01a182] to-[#4646a7]"></div>
+
+  <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
+    <!-- Encabezado -->
+    <div class="text-center text-white">
+      <h2 class="text-3xl sm:text-5xl font-extrabold leading-tight">
+        {data.title}
+      </h2>
+      <p class="mt-4 text-base sm:text-lg/7 max-w-3xl mx-auto opacity-95">
+        {data.subtitle}
+      </p>
+
+      {data.cta && (
+        <a
+          href={data.cta.href}
+          class="mt-6 inline-flex items-center gap-2 rounded-xl border border-white/30 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur hover:bg-white/20"
+        >
+          {data.cta.label}
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13.172 12 8.222 7.05l1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" />
+          </svg>
+        </a>
+      )}
+    </div>
+
+    <!-- Contenido -->
+    <div class="mt-10 grid items-center gap-10 lg:grid-cols-2">
+      <!-- Columna izquierda: pasos -->
+      <div class="space-y-8">
+        {data.features.map((f, i) => (
+          <div class="flex items-start gap-4">
+            <!-- Badge numérica o icono -->
+            <div class="shrink-0">
+              {f.num ? (
+                <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-white font-bold ring-1 ring-white/25">
+                  {f.num}
+                </span>
+              ) : (
+                <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white text-sky-600 ring-1 ring-white/25">
+                  <svg viewBox="0 0 24 24" class="h-6 w-6">
+                    <path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z" />
+                  </svg>
+                </span>
+              )}
+            </div>
+
+            <div>
+              <h3 class="text-white text-xl font-extrabold">{f.title}</h3>
+              <p class="mt-2 text-sky-50/90 text-[15px] leading-relaxed">
+                {f.desc}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Columna derecha: mockup + stats -->
+      <div class="relative">
+        <div class="rounded-[26px] ring-1 ring-white/25 bg-white/5 p-2 backdrop-blur">
+          <img
+            src={data.image.src}
+            alt={data.image.alt}
+            class="w-full h-auto rounded-[22px] object-cover"
+            loading="lazy"
+          />
+        </div>
+
+        {data.stats?.length > 0 && (
+          <div class="absolute -bottom-8 left-1/2 z-10 w-[92%] -translate-x-1/2 rounded-2xl bg-white/20 p-4 backdrop-blur ring-1 ring-white/30">
+            <div class="grid grid-cols-3 gap-4 text-center text-white">
+              {data.stats.map((s) => (
+                <div class="px-2">
+                  <div class="text-xl font-extrabold">{s.value}</div>
+                  <div class="text-xs opacity-90">{s.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+</section>

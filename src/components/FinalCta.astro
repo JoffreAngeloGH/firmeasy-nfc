@@ -1,0 +1,60 @@
+---
+/**
+ * CTA Final (banda degradada)
+ * - Sin React; render estático
+ * - Lee desde site.json con import * as siteData
+ */
+import * as siteData from "../../site.json";
+const data = siteData.finalCta;
+const g = data.gradient || { from: "#00a280", via: "#01a182", to: "#4646a7" };
+---
+
+<section id={data.id} class="relative overflow-hidden">
+  <!-- Fondo degradado -->
+  <div
+    class="absolute inset-0 -z-10"
+    style={`background: linear-gradient(115deg, ${g.from} 0%, ${g.via} 50%, ${g.to} 100%);`}
+  >
+  </div>
+
+  <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
+    <div class="text-center text-white">
+      <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight">
+        {data.title}
+      </h2>
+      {
+        data.subtitle && (
+          <p class="mt-4 max-w-3xl mx-auto text-base sm:text-lg/7 opacity-95">
+            {data.subtitle}
+          </p>
+        )
+      }
+
+      <!-- Botones -->
+      <div
+        class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
+      >
+        {
+          data.primary && (
+            <a
+              href={data.primary.href}
+              class="inline-flex items-center justify-center rounded-xl bg-white px-6 py-3 text-sm font-semibold text-sky-700 shadow-lg ring-1 ring-white/20 hover:opacity-95"
+            >
+              {data.primary.label}
+            </a>
+          )
+        }
+        {
+          data.secondary && (
+            <a
+              href={data.secondary.href}
+              class="inline-flex items-center justify-center rounded-xl border border-white/60 bg-white/0 px-6 py-3 text-sm font-semibold text-white backdrop-blur hover:bg-white/10"
+            >
+              {data.secondary.label}
+            </a>
+          )
+        }
+      </div>
+    </div>
+  </div>
+</section>
