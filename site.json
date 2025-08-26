@@ -1,11 +1,12 @@
 {
 "navd": {
     "menu": [
-      { "name": "Inicio", "link": "/#inicio" },
-      { "name": "Nosotros", "link": "#nosotrosD" },
-      { "name": "Características", "link": "#caracteristicasD" },
-      { "name": "Froma de trabajo", "link": "#trabajoD" },
-      { "name": "Usuarios", "link": "#usuariosD" }
+      { "name": "Inicio", "link": "https://firmeasy.legal" },
+      { "name": "Como Funciona", "link": "#autenticacion" },
+      { "name": "Seguridad", "link": "#niveles" },
+      { "name": "Industrias", "link": "#industrias" },
+      { "name": "Respaldo", "link": "#respaldo" },
+      { "name": "FAQ", "link": "#faq" }
     ],
     "button1": {
       "text": "Asesorate ahora",
@@ -40,7 +41,7 @@
         "title": "Firma Remota Certificada",
         "desc": "Ejecución de documentos oficiales desde cualquier ubicación con validez legal completa, respaldada por certificación RENIEC.",
         "image": "../../images/hero-nfc.jpg",
-        "icon": "/assets/icons/globe.svg",
+        "icon": "../../images/icons/globe.svg",
         "link": "/soluciones/firma-remota"
       },
       {
@@ -48,7 +49,7 @@
         "title": "Gestión Corporativa de Firmas",
         "desc": "Coordine procesos de firma masivos con trazabilidad completa y control administrativo centralizado.",
         "image": "../../images/hero-nfc.jpg",
-        "icon": "/assets/icons/users.svg",
+        "icon": "../../images/icons/users.svg",
         "link": "/soluciones/gestion-corporativa"
       },
       {
@@ -56,7 +57,7 @@
         "title": "Infraestructura Sin Hardware",
         "desc": "Elimine la dependencia de tokens físicos mediante nuestra tecnología de autenticación digital avanzada.",
         "image": "../../images/hero-nfc.jpg",
-        "icon": "/assets/icons/mobile.svg",
+        "icon": "../../images/icons/tablet-smartphone.svg",
         "link": "/soluciones/infraestructura"
       },
       {
@@ -64,7 +65,7 @@
         "title": "Infraestructura Sin Hardware",
         "desc": "Elimine la dependencia de tokens físicos mediante nuestra tecnología de autenticación digital avanzada.",
         "image": "../../images/hero-nfc.jpg",
-        "icon": "/assets/icons/mobile.svg",
+        "icon": "../../images/icons/monitor.svg",
         "link": "/soluciones/infraestructura"
       },
       {
@@ -72,15 +73,7 @@
         "title": "Infraestructura Sin Hardware",
         "desc": "Elimine la dependencia de tokens físicos mediante nuestra tecnología de autenticación digital avanzada.",
         "image": "../../images/hero-nfc.jpg",
-        "icon": "/assets/icons/mobile.svg",
-        "link": "/soluciones/infraestructura"
-      },
-      {
-        "id": 6,
-        "title": "Infraestructura Sin Hardware",
-        "desc": "Elimine la dependencia de tokens físicos mediante nuestra tecnología de autenticación digital avanzada.",
-        "image": "../../images/hero-nfc.jpg",
-        "icon": "/assets/icons/mobile.svg",
+        "icon": "../../images/icons/lock.svg",
         "link": "/soluciones/infraestructura"
       }
     ]
@@ -113,7 +106,7 @@
       }
     ],
     "image": {
-      "src": "/assets/img/auth/mockup-nfc.jpg",
+      "src": "../../images/movil-nfc.png",
       "alt": "Mockup autenticación NFC en smartphone"
     },
     "stats": [
@@ -207,7 +200,7 @@
     ]
   },
    "cryptoShield": {
-    "id": "respaldos",
+    "id": "respaldo",
     "title": "Evita fraudes con respaldo oficial y seguridad criptográfica",
     "subtitle": "Máxima seguridad avalada por RENIEC y la Infraestructura Oficial de Firma Electrónica",
     "items": [
@@ -291,7 +284,7 @@
     "title": "Por qué elegirnos",
     "subtitle": "La confianza de miles de usuarios y empresas nos respalda",
     "image": {
-      "src": "/assets/img/whyus/lock-hero.jpg",
+      "src": "../../images/candado-nfc.png",
       "alt": "Seguridad y cifrado para firmas digitales"
     },
     "items": [

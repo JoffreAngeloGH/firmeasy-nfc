@@ -29,20 +29,20 @@ const data = siteData.industries;
           <!-- Icono circular -->
           <div class="mx-auto -mt-12 mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-sky-50 ring-1 ring-sky-100">
             {it.icon === "bank" && (
-              <svg class="h-7 w-7 text-sky-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <svg class="h-7 w-7 text-sky-600" viewBox="0 0 24 24" fill="none" stroke="#4646a7" stroke-width="1.8">
                 <path d="M3 10l9-6 9 6" />
                 <path d="M4 10h16v9H4z" />
                 <path d="M8 14v5M12 14v5M16 14v5" />
               </svg>
             )}
             {it.icon === "health" && (
-              <svg class="h-7 w-7 text-sky-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <svg class="h-7 w-7 text-sky-600" viewBox="0 0 24 24" fill="none" stroke="#4646a7" stroke-width="1.8">
                 <path d="M12 21s-7-4.35-7-10a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.65-7 10-7 10" />
                 <path d="M12 8v6M9 11h6" />
               </svg>
             )}
             {it.icon === "gov" && (
-              <svg class="h-7 w-7 text-sky-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <svg class="h-7 w-7 text-sky-600" viewBox="0 0 24 24" fill="none" stroke="#4646a7" stroke-width="1.8">
                 <path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6" />
               </svg>
             )}
@@ -58,7 +58,7 @@ const data = siteData.industries;
           <ul class="mt-6 space-y-3 text-slate-700">
             {it.bullets.map((b) => (
               <li class="flex items-start gap-2">
-                <svg class="h-5 w-5 text-amber-500 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
+                <svg class="h-5 w-5 text-[#00a280] mt-0.5" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 .587l3.668 7.431 8.207 1.193-5.938 5.79 1.403 8.171L12 18.896 4.66 23.172l1.403-8.171L.125 9.211l8.207-1.193z"/>
                 </svg>
                 <span class="text-sm sm:text-base">{b}</span>

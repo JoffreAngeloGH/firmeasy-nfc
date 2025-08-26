@@ -68,28 +68,28 @@ const data = siteData.authSection;
 
       <!-- Columna derecha: mockup + stats -->
       <div class="relative">
-        <div class="rounded-[26px] ring-1 ring-white/25 bg-white/5 p-2 backdrop-blur">
-          <img
+    <div class="w-2/3 mx-auto rounded-[26px] ring-1 ring-white/25 bg-white/5 p-2 backdrop-blur">
+        <img
             src={data.image.src}
             alt={data.image.alt}
-            class="w-full h-auto rounded-[22px] object-cover"
+            class="w-full rounded-[22px] object-cover"
             loading="lazy"
-          />
-        </div>
+        />
+    </div>
 
-        {data.stats?.length > 0 && (
-          <div class="absolute -bottom-8 left-1/2 z-10 w-[92%] -translate-x-1/2 rounded-2xl bg-white/20 p-4 backdrop-blur ring-1 ring-white/30">
+    {data.stats?.length > 0 && (
+        <div class="absolute -bottom-8 left-1/2 z-10 w-[92%] -translate-x-1/2 rounded-2xl bg-white/20 p-4 backdrop-blur ring-1 ring-white/30">
             <div class="grid grid-cols-3 gap-4 text-center text-white">
-              {data.stats.map((s) => (
-                <div class="px-2">
-                  <div class="text-xl font-extrabold">{s.value}</div>
-                  <div class="text-xs opacity-90">{s.label}</div>
-                </div>
-              ))}
+                {data.stats.map((s) => (
+                    <div class="px-2">
+                        <div class="text-xl font-extrabold">{s.value}</div>
+                        <div class="text-xs opacity-90">{s.label}</div>
+                    </div>
+                ))}
             </div>
-          </div>
-        )}
-      </div>
+        </div>
+    )}
+</div>
     </div>
   </div>
 </section>
